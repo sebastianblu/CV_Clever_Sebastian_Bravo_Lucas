@@ -1,67 +1,530 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Clever Sebastian Bravo Lucas</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>CV — Clever Sebastian BBravo Lucas| Programador Full-Stack & Ingeniero de Sistemas</title>
+    <meta name="description"
+        content="CV de Clever Sebastian BBravo Lucas — Programador Full-Stack e Ingeniero de Sistemas. Proyectos, experiencia, skills y contacto." />
+    <!-- Open Graph / Twitter -->
+    <!-- <meta property="og:title" content="CV — Clever Sebastian BBravo Lucas | Programador Full-Stack" />
+    <meta property="og:description" content="CV de Clever Sebastian BBravo Lucas — Programador Full-Stack e Ingeniero de Sistemas." /> -->
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Schema.org Person (minimal) -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "<CLEVER SEBASTIAN BRAVO LUCAS>",
+    "jobTitle": "Programador Full-Stack | Ingeniero de Sistemas",
+    "email": "mailto:<tu@email.com>",
+    "sameAs": ["https://github.com/<tu-usuario>", "https://www.linkedin.com/in/<tu-usuario>"]
+  }
+  </script>
 </head>
+
 <body>
-    <header>
-        <img src="img/foto.jpg" alt="Clever Sebastian" class="foto-perfil">
-        <h1>Clever Sebastian Bravo Lucas</h1>
-        <p>Ingeniero de Sistemas | Desarrollador Fullstack</p>
+    <header class="app-header" role="banner">
+        <div class="header-inner container" role="navigation" aria-label="Cabecera del CV">
+            <!-- <div class="brand" aria-hidden="false">
+                <div
+                    style="width:48px;height:48px;border-radius:10px;background:linear-gradient(135deg,var(--primary),var(--accent));flex-shrink:0">
+                </div>
+                <div>
+                    <h1 id="hd-name"><span>
+                            <Tu Nombre Completo>
+                        </span></h1>
+                    <p class="muted">Programador Full-Stack | Ingeniero de Sistemas</p>
+                </div>
+            </div> -->
+
+            <nav class="controls" aria-label="Controles principales">
+                <!-- <button id="btn-print" class="btn" title="Descargar/Imprimir" aria-noprint="true">
+                    🖨 Descargar PDF
+                </button> -->
+                <a class="btn" href="mailto:sebastianblu247@gmail.com" title="Contactar" aria-label="Enviar correo">✉ Contacto</a>
+                <button id="theme-toggle" class="btn" title="Cambiar tema" aria-pressed="false"
+                    aria-label="Alternar tema">🌙</button>
+                <a href="https://wa.me/51955460536" 
+   target="_blank" 
+   class="btn whatsapp-btn" 
+   title="Escríbeme por WhatsApp" 
+   aria-label="Abrir chat en WhatsApp">
+    +51 955460536
+</a>
+
+            </nav>
+        </div>
     </header>
 
-    <section id="perfil">
-        <h2>Perfil</h2>
-        <p>Ingeniero de sistemas con experiencia en desarrollo de software, aplicaciones web y soluciones tecnológicas modernas.</p>
-    </section>
+    <main class="container" id="main" role="main">
+        <div class="grid">
+            <!-- LEFT / SIDEBAR -->
+            <aside class="profile-card" aria-labelledby="hd-name">  
+                <img class="avatar" src="assets/images/FOTOSEB.png" alt="Avatar o logo" loading="lazy" style="
+                    width:150px;
+                    height:150px;
+                    object-fit:cover;
+                    border-radius:50%;
+                    border:3px solid var(#000);
+                    display:block;
+                    margin:0 auto;
+                ">
 
-    <section id="experiencia">
-        <h2>Experiencia Profesional</h2>
-        <ul>
-            <li>Empresa A - Desarrollador Fullstack - 2023</li>
-            <li>Empresa B - Ingeniero de Sistemas - 2022</li>
-        </ul>
-    </section>
+                <h2 class="name">
+                    <Tu Nombre Completo>
+                </h2>
+                <p class="role">Programador Full-Stack | Ingeniero de Sistemas</p>
+                <p class="muted-block">CLEVER SEBASTIAN BRAVO LUCAS</p>
+                <p class="muted">Ingeniero de Sistemas con <strong class="accent">5</strong> años de experiencia en
+                    desarrollo web, APIs, despliegues y liderazgo técnico. 
+                    </p>
 
-    <section id="educacion">
-        <h2>Educación</h2>
-        <ul>
-            <li>Universidad XYZ - Ingeniería de Sistemas - 2021</li>
-        </ul>
-    </section>
+                <div style="margin-top:12px">
+                    <p class="muted-block">Lenguajes y Frameworks que utilizo</p>
+                    <div class="chips" id="stack-chips">
+                        <!-- Lenguajes Backend -->
+                        <span class="highlight kw" style="background:#6a11cb;color:#fff;">C#</span>
+                        <span class="chip" style="background:#f7971e;color:#fff;">Python</span>
+                        <span class="chip" style="background:#00c6ff;color:#fff;">PHP</span>
+                        <span class="chip" style="background:#1f4037;color:#fff;">JavaScript (ES6+)</span>
 
-    <section id="habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li>Lenguajes: JavaScript, Python, PHP</li>
-            <li>Frameworks: Bootstrap, React, Zend</li>
-            <li>Bases de datos: MySQL, NoSQL</li>
-            <li>Control de versiones: Git, GitHub</li>
-        </ul>
-    </section>
+                        <!-- Frameworks Backend -->
+                        <span class="chip" style="background:#fc4a1a;color:#fff;">.NET</span>
+                        <span class="chip" style="background:#0072ff;color:#fff;">Node.js / Express.js</span>
+                        <span class="chip" style="background:#ffd200;color:#000;">Laravel / Lumen</span>
+                        <span class="chip" style="background:#00f260;color:#fff;">Flask</span>
 
-    <section id="proyectos">
-        <h2>Proyectos</h2>
-        <ul>
-            <li><a href="#">Proyecto 1</a> - Descripción breve</li>
-            <li><a href="#">Proyecto 2</a> - Descripción breve</li>
-        </ul>
-    </section>
+                        <!-- Lenguajes Frontend / Frameworks -->
+                        <span class="chip" style="background:#ff416c;color:#fff;">HTML5</span>
+                        <span class="chip" style="background:#ff4b2b;color:#fff;">CSS3 / SASS / Bootstrap 5</span>
+                        <span class="chip" style="background:#2575fc;color:#fff;">React.js</span>
+                        <span class="chip" style="background:#f7b733;color:#fff;">Angular</span>
+                        <span class="chip" style="background:#99f2c8;color:#000;">Vue.js</span>
 
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Email: ing.cbravo@gmail.com</p>
-        <p>GitHub: <a href="https://github.com/sebastianblu" target="_blank">sebastianblu</a></p>
-        <p>LinkedIn: <a href="#" target="_blank">Tu Perfil</a></p>
-    </section>
+                        <!-- Bases de Datos -->
+                        <span class="chip" style="background:#ff7e5f;color:#fff;">PostgreSQL</span>
+                        <span class="chip" style="background:#00c6ff;color:#fff;">MySQL</span>
+                        <span class="chip" style="background:#6a11cb;color:#fff;">MongoDB</span>
+                    </div>
+                </div>
+
+
+                <div style="margin-top:12px">
+                    <p class="muted-block">Contacto</p>
+                    <p class="muted"><a href="mailto:<tu@email.com>">
+                            <tu@email.com>
+                        </a></p>
+                    <p class="muted">
+                        <a href="https://github.com/sebastianblu" target="_blank" rel="noopener noreferrer">GitHub</a> ·
+                        <a href="https://www.linkedin.com/in/clever-sebastian-bravo-lucas-759a821a1/" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a>.
+                        <a href="https://x.com/Sebast_79" target="_blank"
+                            rel="noopener noreferrer">Twitter</a>.
+                        <a href="https://github.com/sebastianblu" target="_blank"
+                            rel="noopener noreferrer">Portfolio / Web personal</a>
+
+                    </p>
+
+                    <p class="muted">📍 <span>Ciudad, Perú</span></p>
+                </div>
+                <section class="card section" aria-labelledby="contact-title">
+                    <h2 id="contact-title">Contacto</h2>
+
+                    <p class="muted">Nombre: <strong>Clever Sebastian Bravo Lucas</strong></p>
+                    <p class="muted">Email: <a href="mailto:Sebastianblu247@gmail.com">Sebastianblu247@gmail.com</a></p>
+                    <p class="muted">Teléfono: <a href="tel:+51955460536">+51 955460536</a> · Fijo: 71413570</p>
+                    <p class="muted">Ubicación: Lima - Independencia</p>
+
+
+                </section>
+
+            </aside>
+
+            <!-- RIGHT / MAIN -->
+            <section>
+                <!-- HERO -->
+                <section class="card section" aria-labelledby="hero-title">
+                    <h2 id="hero-title">Resumen profesional</h2>
+                    <p class="muted">Soy <strong>
+                            <Tu Nombre>
+                        </strong>, Programador Full-Stack e Ingeniero de Sistemas con experiencia en construir
+                        aplicaciones escalables, optimizar rendimiento y liderar equipos técnicos para entregar valor.
+                    </p>
+                    <div style="margin-top:12px" aria-hidden="false">
+                        <div class="muted-block">Proyectos destacados</div>
+                        <div class="chips" style="margin-top:8px">
+                            <span class="chip">E-Commerce</span>
+                            <span class="chip">Plataforma B2B</span>
+                            <span class="chip">Microservicios</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- EXPERIENCE -->
+                <section class="card section" aria-labelledby="exp-title">
+                    <h2 id="exp-title">Experiencia</h2>
+                    <div class="timeline" role="list">
+
+                        <article class="timeline-item" role="listitem">
+                            <div class="date">01/12/2023 — Actualidad</div>
+                            <div class="body">
+                                <strong>Analista Funcional Semi Senior — Centro Cultural Peruano Japonés</strong>
+                                <div class="muted">Remoto · Lima</div>
+                                <ul>
+                                    <li>Participación en análisis funcional y diseño de procesos internos.</li>
+                                    <li>Optimización de flujos y documentación de procedimientos.</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item" role="listitem">
+                            <div class="date">15/09/2020 — Actualidad</div>
+                            <div class="body">
+                                <strong>Analista Programador (C#, Angular) — Fargo Line (FERREYCORP)</strong>
+                                <div class="muted">Remoto · Lima</div>
+                                <ul>
+                                    <li>Desarrollo y mantenimiento del sistema de gestión de incidentes.</li>
+                                    <li>Migración e implementación de mejoras en el sistema administrativo.</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item" role="listitem">
+                            <div class="date">01/03/2023 — 30/03/2023</div>
+                            <div class="body">
+                                <strong>Analista Programador — Casistemas Empresariales (Proyecto Cineplanet)</strong>
+                                <div class="muted">Presencial · Lima</div>
+                                <ul>
+                                    <li>Desarrollo puntual para proyecto Cineplanet según requerimientos del cliente.
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item" role="listitem">
+                            <div class="date">01/02/2022 — 15/09/2022</div>
+                            <div class="body">
+                                <strong>Analista Programador (Python, Angular, PostgreSQL) — SemperDLT SAC</strong>
+                                <div class="muted">Presencial · Lima</div>
+                                <ul>
+                                    <li>Desarrollo de funcionalidades para sistemas internos utilizando Python y
+                                        Angular.</li>
+                                    <li>Gestión y optimización de bases de datos PostgreSQL.</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item" role="listitem">
+                            <div class="date">12/04/2020 — 17/12/2021</div>
+                            <div class="body">
+                                <strong>Programador Web (XAMPP, PHP, Angular) — Aceros Gladys EIRL</strong>
+                                <div class="muted">Presencial · Lima</div>
+                                <ul>
+                                    <li>Mantenimiento y desarrollo de aplicaciones web internas.</li>
+                                </ul>
+                            </div>
+                        </article>
+
+                        <article class="timeline-item" role="listitem">
+                            <div class="date">29/03/2020 — 28/12/2020</div>
+                            <div class="body">
+                                <strong>Prácticas en Desarrollo de Software — Grupo Ascenda SAC</strong>
+                                <div class="muted">Presencial · Lima</div>
+                                <ul>
+                                    <li>Participación en proyectos internos de desarrollo web y soporte de sistemas.
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+
+                <!-- PROJECTS -->
+                <section class="card section" aria-labelledby="projects-title">
+                    <h2 id="projects-title">Proyectos destacados</h2>
+
+                    <div class="project-controls" id="filter-wrap" aria-label="Filtros de proyectos">
+                        <div class="muted-block">Filtrar por tecnología:</div>
+                        <button class="filter-chip" data-filter="all" aria-pressed="true">Todo</button>
+                        <button class="filter-chip" data-filter="react">React</button>
+                        <button class="filter-chip" data-filter="node">Node.js</button>
+                        <button class="filter-chip" data-filter="docker">Docker</button>
+                        <button class="filter-chip" data-filter="aws">AWS</button>
+                        <button class="filter-chip" data-filter="wordpress">WordPress</button>
+                        <button class="filter-chip" data-filter="web">Web</button>
+                    </div>
+
+                    <div class="projects-grid" id="projects">
+
+                        <article class="project-card" data-tags="web,health" tabindex="0">
+                            <h3>Sistema de Salud — Asociación Peruano Japonesa</h3>
+                            <p class="muted">Desarrollo integral de plataforma administrativa para el sector salud, con
+                                análisis de datos y reporting.</p>
+                            <div class="tags"><span class="tag">Web</span><span class="tag">Salud</span></div>
+                            <p style="margin-top:8px">Logros: Sistema completo para gestión administrativa y reportes de
+                                análisis de datos.</p>
+                            <p style="margin-top:8px"><a href="#" class="deadlink">Demo</a> · <a href="#"
+                                    class="deadlink">Repo</a></p>
+                        </article>
+
+                        <article class="project-card" data-tags="web,education" tabindex="0">
+                            <h3>SilferSystem — Educación</h3>
+                            <p class="muted">Plataforma educativa interactiva y gestión de usuarios, con mejoras de
+                                usabilidad y backend robusto.</p>
+                            <div class="tags"><span class="tag">Web</span><span class="tag">Educación</span></div>
+                            <p style="margin-top:8px">Logros: Mejoras significativas en la experiencia de usuario y
+                                gestión de contenidos.</p>
+                            <p style="margin-top:8px"><a href="#" class="deadlink">Demo</a> · <a href="#"
+                                    class="deadlink">Repo</a></p>
+                        </article>
+
+                        <article class="project-card" data-tags="node,logistics,web" tabindex="0">
+                            <h3>Fargo Line — Logística</h3>
+                            <p class="muted">Sistema de gestión de logística y flotas con dashboards y APIs REST.</p>
+                            <div class="tags"><span class="tag">Node.js</span><span class="tag">Logística</span><span
+                                    class="tag">Web</span></div>
+                            <p style="margin-top:8px">Logros: Implementación de dashboards en tiempo real y APIs para
+                                gestión de flotas.</p>
+                            <p style="margin-top:8px"><a href="#" class="deadlink">Demo</a> · <a href="#"
+                                    class="deadlink">Repo</a></p>
+                        </article>
+
+                        <article class="project-card" data-tags="web,wordpress,ecommerce" tabindex="0">
+                            <h3>Desarrollo Web — Soodev</h3>
+                            <p class="muted">Desarrollo de todo tipo de sitios web corporativos y comercio electrónico,
+                                con WordPress o código personalizado.</p>
+                            <div class="tags"><span class="tag">Web</span><span class="tag">WordPress</span><span
+                                    class="tag">E-Commerce</span></div>
+                            <p style="margin-top:8px">Logros: Soluciones corporativas completas, adaptables y escalables
+                                según necesidad del cliente.</p>
+                            <p style="margin-top:8px"><a href="#" class="deadlink">Demo</a> · <a href="#"
+                                    class="deadlink">Repo</a></p>
+                        </article>
+
+                    </div>
+                </section>
+
+
+                <!-- EDUCATION & CERTS -->
+                <section class="card section" aria-labelledby="edu-title">
+                    <h2 id="edu-title">Educación & Certificaciones</h2>
+                    <div>
+                        <strong>Ingeniería de Sistemas — <Universidad></strong>
+                        <div class="muted">2014 — 2019</div>
+                        <p class="muted">Certificaciones:
+                            <span class="highlight">AWS Certified Developer</span> ·
+                            <span class="highlight">Scrum Master</span>
+                        </p>
+                        <p class="muted">Conferencias & Congresos:</p>
+                        <ul>
+                            <li>Conferencia: “Transformación digital en las organizaciones” — Universidad César Vallejo
+                                (10/11/2020)</li>
+                            <li>Conferencia: “Scrum y Arquitectura Ágil” — Universidad César Vallejo (10/11/2020)</li>
+                            <li>Congreso Internacional: “El Mundo Entrepreneur” — UPC (Octubre 2020)</li>
+                            <li>Conferencia: SAP S4 HANA — Nextech</li>
+                        </ul>
+                    </div>
+                </section>
+
+
+                <!-- SKILLS -->
+                <!-- SKILLS -->
+                <section class="card section" aria-labelledby="skills-title">
+                    <h2 id="skills-title">Habilidades</h2>
+
+                    <!-- Frontend -->
+                    <div class="muted-block">Frontend</div>
+                    <div class="skill">
+                        <div style="min-width:70px">React.js</div>
+                        <div class="bar"><i
+                                style="width:85%;background:linear-gradient(90deg,var(--primary),var(--accent));"></i>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div style="min-width:70px">Angular</div>
+                        <div class="bar"><i
+                                style="width:80%;background:linear-gradient(90deg,var(--accent),var(--primary));"></i>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div style="min-width:70px">Vue.js / jQuery</div>
+                        <div class="bar"><i
+                                style="width:75%;background:linear-gradient(90deg,var(--primary),var(--accent));"></i>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div style="min-width:70px">HTML5 / CSS3 / SASS / Bootstrap 5</div>
+                        <div class="bar"><i
+                                style="width:90%;background:linear-gradient(90deg,var(--accent),var(--primary));"></i>
+                        </div>
+                    </div>
+
+                    <!-- Backend -->
+                    <div class="muted-block">Backend</div>
+                    <div class="skill">
+                        <div style="min-width:70px">Node.js</div>
+                        <div class="bar"><i
+                                style="width:80%;background:linear-gradient(90deg,var(--accent),var(--primary));"></i>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div style="min-width:70px">C# / .NET Framework / Entity Framework</div>
+                        <div class="bar"><i
+                                style="width:85%;background:linear-gradient(90deg,var(--primary),var(--accent));"></i>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div style="min-width:70px">PHP / Laravel / Lumen</div>
+                        <div class="bar"><i
+                                style="width:80%;background:linear-gradient(90deg,var(--accent),var(--primary));"></i>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div style="min-width:70px">Python / Flask</div>
+                        <div class="bar"><i
+                                style="width:75%;background:linear-gradient(90deg,var(--primary),var(--accent));"></i>
+                        </div>
+                    </div>
+
+                    <!-- Bases de Datos -->
+                    <div class="muted-block">Bases de Datos</div>
+                    <div class="skill">
+                        <div style="min-width:70px">SQL Server / PostgreSQL / MySQL</div>
+                        <div class="bar"><i
+                                style="width:85%;background:linear-gradient(90deg,var(--accent),var(--primary));"></i>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div style="min-width:70px">Oracle (en estudio) / MongoDB</div>
+                        <div class="bar"><i
+                                style="width:60%;background:linear-gradient(90deg,var(--primary),var(--accent));"></i>
+                        </div>
+                    </div>
+
+                    <!-- DevOps & Herramientas -->
+                    <div class="muted-block">DevOps & Herramientas</div>
+                    <div class="skill">
+                        <div style="min-width:70px">Docker / CI/CD / Git / GitHub / GitLab</div>
+                        <div class="bar"><i
+                                style="width:75%;background:linear-gradient(90deg,var(--accent),var(--primary));"></i>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div style="min-width:70px">API REST / GraphQL / JWT / OAuth 2.0 / WebSockets</div>
+                        <div class="bar"><i
+                                style="width:80%;background:linear-gradient(90deg,var(--primary),var(--accent));"></i>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div style="min-width:70px">Testing Unitario y Funcional (PHPUnit, Jest)</div>
+                        <div class="bar"><i
+                                style="width:70%;background:linear-gradient(90deg,var(--accent),var(--primary));"></i>
+                        </div>
+                    </div>
+
+                    <!-- Metodologías y Buenas Prácticas -->
+                    <div class="muted-block">Metodologías & Buenas Prácticas</div>
+                    <div class="skill">
+                        <div style="min-width:70px">SCRUM / Extreme Programming (XP)</div>
+                        <div class="bar"><i
+                                style="width:85%;background:linear-gradient(90deg,var(--primary),var(--accent));"></i>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div style="min-width:70px">Clean Code / SOLID / Microservicios</div>
+                        <div class="bar"><i
+                                style="width:80%;background:linear-gradient(90deg,var(--accent),var(--primary));"></i>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div style="min-width:70px">Documentación técnica (Markdown, Swagger)</div>
+                        <div class="bar"><i
+                                style="width:75%;background:linear-gradient(90deg,var(--primary),var(--accent));"></i>
+                        </div>
+                    </div>
+
+                    <!-- Habilidades Blandas -->
+                    <div class="muted-block">Habilidades Blandas</div>
+                    <ul style="margin-left:0; padding-left:0; list-style:disc; margin-top:5px;">
+                        <li>Comunicación oral y escrita</li>
+                        <li>Pensamiento crítico y analítico</li>
+                        <li>Gestión del tiempo y administración de presupuestos</li>
+                        <li>Trabajo en equipo multidisciplinario</li>
+                        <li>Gestión de proyectos (Project Management)</li>
+                    </ul>
+                </section>
+
+                <!-- KPIs -->
+                <section class="card section" aria-labelledby="kpi-title">
+                    <h2 id="kpi-title">Resumen Profesional</h2>
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="muted-block">Años de experiencia</div>
+                            <div style="font-size:20px">+5 años</div>
+                        </div>
+                        <div class="stat">
+                            <div class="muted-block">Empresas y proyectos</div>
+                            <div style="font-size:20px">7 empresas · 12+ proyectos</div>
+                        </div>
+                        <div class="stat">
+                            <div class="muted-block">Industrias</div>
+                            <div style="font-size:20px">Salud · Educación · Logística · Retail</div>
+                        </div>
+                        <div class="stat">
+                            <div class="muted-block">Tecnologías clave</div>
+                            <div style="font-size:20px">C# · Angular · Python · React</div>
+                        </div>
+                        <div class="stat">
+                            <div class="muted-block">Clientes satisfechos</div>
+                            <div style="font-size:20px">+30 entregas exitosas</div>
+                        </div>
+                    </div>
+                </section>
+
+
+                                <!-- LANGUAGES -->
+                            <section class="card section" aria-labelledby="lang-title">
+                    <h2 id="lang-title">Idiomas</h2>
+                    <p><strong>Español:</strong> Nativo</p>
+                    <p><strong>Inglés:</strong> American English · Nivel B2/C1 (Certificación XI · Cisco Networking Academy)</p>
+                    
+                    <h3 class="muted-block" style="margin-top:10px">Certificaciones relacionadas</h3>
+                    <ul class="muted">
+                        <li>Asistente de Help Desk — Universidad César Vallejo</li>
+                        <li>Idiomas / Computación — Nivel III</li>
+                    </ul>
+                </section>
+
+
+                <!-- CONTACT -->
+                <section class="card section" aria-labelledby="contact-title">
+                    <h2 id="contact-title">Contacto</h2>
+                  
+                   
+                </section>
+
+                <footer style="margin-top:16px;text-align:center;color:var(--muted);font-size:13px">
+                    © <span id="year"></span> <span>
+                        <Tu Nombre>
+                    </span> · Última actualización: <span id="last-update"></span>
+                </footer>
+            </section>
+        </div>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Clever Sebastian Bravo Lucas</p>
+        <p>&copy; 2025 Clever Sebastian Bravo Luacas</p>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
